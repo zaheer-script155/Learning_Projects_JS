@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.game_name {
+  /* border: 2px solid red; */
+  background-color: #081b31;
+  color: white;
+  text-align: center;
+  line-height: 5rem;
+}
+.game_name h1 {
+  /* border: 2px solid white; */
+}
+.choicees_container {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.choices {
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 155px;
+  width: 155px;
+  border-radius: 50%;
+}
+.choices:hover {
+  cursor: pointer;
+  opacity: 90%;
+  background-color: #081b31;
+  height: 160px;
+  width: 160px;
+}
+.choices img {
+  /* border: 2px solid black; */
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.choices img:hover {
+  height: 155px;
+  width: 155px;
+}
+.score_container {
+  /* border: 2px solid red; */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+.score {
+  /* border: 2px solid red; */
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.score p {
+  border: 1.5px solid #081b31;
+  color: #081b31;
+  border-radius: 0.5rem;
+  padding: 0rem 0.7rem 0rem 0.7rem;
+}
+#user_score,
+#comp_score {
+  /* border: 2px solid red; */
+  background-color: #081b31;
+  width: 2.8rem;
+  height: 2.8rem;
+  color: white;
+  border-radius: 50%;
+  font-size: 2rem;
+  /* display: flex; */
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 0;
+}
+.msg_container {
+  /* border: 2px solid red; */
+  line-height: 3rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 3rem;
+}
+#msg {
+  /* border: 2px solid red; */
+  padding: 0rem 1rem 0rem 1rem;
+  background-color: #081b31;
+  color: white;
+  border-radius: 1.1rem;
+}

@@ -1,0 +1,101 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: antiquewhite;
+  text-align: center;
+}
+.container {
+    /* border: 3px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 70vh;
+  flex-direction: column;
+  gap: 2vmin;
+}
+.game {
+  /* border: 3px solid red; */
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2vmin;
+  background-color: blueviolet;
+  border-radius: 5vmin;
+}
+.box {
+  /* border: 3px solid red; */
+  height: 15vmin;
+  width: 15vmin;
+  border-radius: 5vmin;
+  cursor: pointer;
+  border: none;
+  font-size: 6vmin;
+background-color: white;
+}
+.box_1{
+  background-color: black;
+  color: white;
+}
+.box_2{
+  color: black;
+  background-color: pink;
+}
+.btnRestNew {
+    /* border: 2px solid red; */
+  gap: 20vmin;
+  display: flex;
+  justify-content: center;
+  width: 60vmin;
+  border-radius: 2vmin;
+  /* background-color: blueviolet; */
+  margin-top: 1vmin;
+  padding: 0.5vmin;
+
+}
+.resetBtn {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 1vmin;
+  width: 17vmin;
+  height: 5vmin;
+  font-weight: 550;
+  font-size: 2.5vmin;
+  cursor: pointer;
+}
+.para_container {
+    /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vmin;
+}
+.winner_El {
+    /* border: 2px solid red; */
+    /* display: none; */
+  /* color: white;
+  background-color: black; */
+  font-size: 6vmin;
+  padding: 1.5vmin;
+  margin-top: 2vmin;
+  width: auto;
+  border-radius: 2vmin;
+  text-align: center;
+}
+.title_game {
+    /* border: 2px solid red; */
+  padding: 1vmin 0vmin 2vmin 0vmin;
+  background-color: blueviolet;
+  color: white;
+  width: 60vmin;
+  border-radius: 2vmin;
+}
+.hide_El{
+  display: none;
+}

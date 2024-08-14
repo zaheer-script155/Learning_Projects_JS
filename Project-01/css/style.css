@@ -1,0 +1,590 @@
+/* The resets margin, padding and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* The css of body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(224, 134, 134);
+  /* background-color: black; */
+}
+
+/* The complete project text-decoration and list-style */
+a {
+  text-decoration: none;
+}
+
+/* The utility class */
+.container {
+  /* padding-inline: 10px; */
+  max-width: 1188px;
+  margin-inline: auto;
+}
+
+/* The main-header */
+/* .main-header{
+  width: 100%;
+  height: 100vh;
+  
+} */
+
+/* The main-nav */
+.main-nav {
+  border: 2px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  padding-inline: 40px;
+}
+
+.nav-link {
+  font-size: 0.8rem;
+}
+
+.nav-link ul {
+  display: flex;
+  border: 2px solid red;
+  gap: 36px;
+  list-style: none;
+}
+
+.nav-link ul li a {
+  color: lightgray;
+}
+
+.nav-link ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: rgb(31, 171, 113);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-link ul li:hover::after {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.nav-link ul li a:hover {
+  color: white;
+  transition: 0.5s;
+}
+
+.estate-logo {
+  border: 2px solid red;
+  display: flex;
+}
+
+.estate-logo img {
+  width: 75px;
+  /* border: 1px solid white; */
+}
+
+/* The first container (header) */
+.header-section {
+  border: 2px solid red;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  margin-top: 50px;
+  margin-bottom: 50px;
+  gap: 80px;
+  padding-inline: 40px;
+}
+
+.header-left {
+  border: 2px solid green;
+  max-width: 100%;
+}
+
+.header-left img {
+  width: 100%;
+}
+.header-right {
+  border: 2px solid green;
+  max-width: 47.5%;
+}
+.header-sub-right {
+  color: white;
+}
+.header-sub-right h1 {
+  font-size: 4rem;
+  margin-top: 30px;
+}
+.header-sub-right p {
+  font-size: 1rem;
+  color: rgb(150, 150, 150);
+  margin-top: 30px;
+}
+.main-card {
+  display: flex;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-top: 60px;
+  padding: 0px 15px;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+.location {
+  display: flex;
+  gap: 10px;
+}
+.location img {
+  width: 36px;
+}
+.location div {
+  flex-direction: column;
+  display: flex;
+}
+.type {
+  display: flex;
+  gap: 10px;
+}
+.type img {
+  width: 36px;
+}
+.type div {
+  flex-direction: column;
+  display: flex;
+}
+.search {
+  border: 1px solid rgba(31, 171, 113, 1);
+  background-color: rgba(31, 171, 113, 1);
+  flex-basis: 110px;
+  padding: 10px 0px;
+  text-align: center;
+  border-radius: 8px;
+  margin-left: 30px;
+}
+.search div a {
+  color: white;
+  font-size: 1rem;
+}
+.sub-location {
+  padding-bottom: 5px;
+  font-size: 14px;
+  color: rgba(150, 150, 150, 1);
+}
+.sub-card {
+  border-radius: 3px;
+  cursor: pointer;
+
+  border-color: rgba(150, 150, 150, 1);
+  color: rgba(45, 45, 47, 1);
+}
+.main-feadback {
+  display: flex;
+  margin-top: 70px;
+  /* border: 2px solid green; */
+  gap: 30px;
+  color: rgba(255, 255, 255, 1);
+}
+.sub-feadback div {
+  font-size: 25px;
+  font-weight: 550;
+}
+.sub-feadback p {
+  font-size: 1rem;
+  color: rgba(128, 128, 128, 1);
+}
+.sub-feadback div a {
+  color: rgba(69, 115, 253, 1);
+}
+/* The popular Residence section */
+.main-popular {
+  border: 2px solid red;
+  padding-inline: 40px;
+}
+.sub-popular {
+  display: flex;
+  border: 2px solid green;
+  justify-content: space-between;
+}
+.popular p {
+  font-size: 1rem;
+  color: rgba(31, 171, 113, 1);
+}
+.popular h1 {
+  color: white;
+  font-size: 36px;
+}
+.explore {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+  border: 2px solid black;
+}
+.explore p {
+  color: rgba(208, 208, 209, 1);
+  font-size: 1rem;
+}
+.explore img {
+  width: 36px;
+}
+.main-popular-img {
+  display: flex;
+  border: 2px solid green;
+  justify-content: space-between;
+  /* gap: 20px; */
+}
+.sub-popular-img {
+  width: 345px;
+  background-color: rgba(22, 22, 23, 1);
+  border-radius: 10px;
+}
+.main-img img {
+  width: 100%;
+}
+.sub-img-location {
+  display: flex;
+  margin: 10px 0px 10px 15px;
+  gap: 10px;
+  align-items: center;
+  color: rgba(208, 208, 209, 1);
+  font-size: 14px;
+}
+.sub-img-location img {
+  width: 25px;
+}
+.qualites {
+  display: flex;
+  margin: 10px 0px 10px 15px;
+  gap: 30px;
+  color: rgba(150, 150, 150, 1);
+  font-size: 14px;
+  padding-left: 2px;
+}
+.sub-qualites {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.main-button {
+  display: flex;
+  margin: 20px 0px 20px 15px;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2px;
+}
+.main-button div {
+  padding: 10px 20px;
+  background-color: black;
+  border-radius: 10px;
+  border: 1px solid rgba(31, 171, 113, 1);
+}
+.main-button div a {
+  color: rgba(31, 171, 113, 1);
+  font-size: 16px;
+}
+.main-button p {
+  color: white;
+  font-size: 17px;
+  padding-right: 20px;
+}
+#select-book {
+  background-color: rgba(31, 171, 113, 1);
+}
+#select-book a {
+  color: white;
+}
+/* The main-service */
+.main-service {
+  border: 2px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-inline: 40px;
+  margin-top: 200px;
+  margin-bottom: 75px;
+}
+.main-service-left {
+  border: 2px solid green;
+}
+.main-service-left img {
+  width: 560px;
+}
+.main-service-right {
+  border: 2px solid green;
+}
+.first-sub-right p {
+  color: rgba(31, 171, 113, 1);
+  font-size: 16px;
+}
+.first-sub-right h1 {
+  color: rgba(255, 255, 255, 1);
+  font-size: 47px;
+  margin: 10px 0px;
+}
+#service-color {
+  color: rgba(150, 150, 150, 1);
+  font-size: 18px;
+  margin: 10px 0px;
+}
+.second-sub-right {
+  display: flex;
+  gap: 30px;
+  color: white;
+  font-size: 16px;
+  align-items: center;
+}
+.sub-right div {
+  display: flex;
+  gap: 8px;
+  margin: 20px 0px;
+  padding-left: 2px;
+}
+.sub-right div img {
+  width: 20px;
+}
+/* The benefit section */
+.main-benefit {
+  display: flex;
+  border: 2px solid red;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 40px;
+  gap: 50px;
+}
+.left-benefit {
+  border: 2px solid green;
+}
+.first-benefit p {
+  color: rgba(31, 171, 113, 1);
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.first-benefit h1 {
+  color: white;
+  font-size: 40px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+#benefit-color {
+  color: rgba(150, 150, 150, 1);
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.second-benefit div {
+  display: flex;
+  gap: 8px;
+  padding: 10px 0px;
+  align-items: center;
+}
+.second-benefit div img {
+  width: 20px;
+}
+.second-benefit div p {
+  color: white;
+  font-size: 16px;
+}
+.right-benefit {
+  border: 2px solid green;
+  margin: 30px 0px;
+}
+.right-benefit img {
+  width: 560px;
+}
+/* The FAQ section */
+.main-question {
+  display: flex;
+  border: 2px solid red;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 120px;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.first-sub-question {
+  border: 2px solid green;
+  text-align: center;
+}
+.first-sub-question h5 {
+  color: rgba(255, 255, 255, 1);
+  font-size: 36px;
+}
+.first-sub-question p {
+  font-size: 16px;
+  color: rgba(208, 208, 209, 1);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0px 190px;
+}
+.second-sub-question {
+  border: 2px solid green;
+  width: 800px;
+}
+.sub-question-one {
+  border: 1px solid rgba(31, 171, 113, 1);
+  display: flex;
+  background-color: rgba(31, 171, 113, 1);
+  height: 175px;
+  padding: 25px 50px 25px 50px;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.sub-one {
+  width: 70%;
+}
+.sub-one h6 {
+  color: white;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+.sub-one p {
+  color: rgba(208, 208, 209, 1);
+  font-size: 14px;
+  line-height: 20px;
+}
+.sub-two {
+  border: 1px solid green;
+  display: flex;
+  justify-content: right;
+  margin-bottom: auto;
+}
+.sub-two img {
+  width: 20px;
+}
+.sub-question-two {
+  display: flex;
+  padding: 15px 50px;
+  justify-content: space-between;
+  border: 1px solid rgba(31, 171, 113, 1);
+  margin-top: 20px;
+  border-radius: 5px;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+}
+.sub-question-two img {
+  width: 20px;
+}
+
+/* The footer section */
+.main-footer{
+  display: flex;
+  border: 2px solid red;
+  /* align-items: center;
+  justify-content: center; */
+  padding-inline: 120px;
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
+  /* padding-top: 20px;
+  padding-bottom: 20px; */
+}
+.sub-footer-left{
+  border: 2px solid green;
+}
+.first-footer-left{
+  font-size: 20px;
+  color: white;
+  font-weight: 600px;
+  margin: auto;
+}
+
+.second-footer-left{
+  font-size: 15px;
+  color: rgba(150, 150, 150, 1);
+
+  
+}
+.second-footer-left p{
+margin-top: 8px;
+}
+.third-footer-left{
+  border: 1px solid green;
+  display: flex;
+}
+.third-footer-left img{
+  margin-right: 15px;
+  color: white;
+  width: 20px;
+}
+.fourth-footer-left{
+  color: rgba(150, 150, 150, 1);
+  font-size: 12px;
+}
+.fourth-footer-left p{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.sub-footer-right{
+  border: 2px solid black;
+}
+.first-footer-right{
+  font-size: 20px;
+  color: white;
+  font-weight: 600px;
+}
+.second-footer-right{
+  color: rgba(150, 150, 150, 1);
+  font-size: 14px;
+  margin: 10px 0px;
+
+}
+.third-footer-right{
+  /* border: 2px solid black; */
+}
+.third-footer-right form input{
+  width: 100%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: none;
+  padding: 5px 0px;
+  color: rgba(128, 128, 128, 1);
+  font-size: 14px;
+  border-bottom: 1px solid rgba(45, 45, 47, 1);
+
+}
+.third-footer-right form div{
+  display: flex;
+  margin-top: 20px;
+  justify-content: right;
+  text-align: center;
+}
+.third-footer-right form div a{
+  border: 1px solid rgba(31, 171, 113, 1);
+  background-color: rgba(31, 171, 113, 1);
+  border-radius: 4px;
+  padding: 10px;
+  width: 130px;
+  height: 45px;
+  color:  rgba(255, 255, 255, 1);
+  font-size: 16px;
+}
+.footer{
+}
+.sub-footer{
+  display: flex;
+  border: 2px solid red;
+  padding-inline: 120px;
+  justify-content: space-between;
+  margin-top: 60px;
+  color: rgba(150, 150, 150, 1);
+  font-size: 14px;
+  align-items: center;
+  text-align: center;
+}
+.copy-left{
+  border: 2px solid green;
+  padding: 10px;
+}
+.copy-right{
+  padding: 10px;
+  border: 2px solid green;
+  display: flex;
+  gap: 20px;
+}
